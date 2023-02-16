@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body
+{
+    background: #fff;
+}
+nav
+{
+    position: absolute;
+    top: 15px;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    width: 70px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+
+}
+.logo
+{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease ;
+    margin: 10px 0 0  10px;
+}
+.logo img
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+a
+{
+    position:inherit;
+    color: rgb(219, 9, 9);
+    font-size: 14px;
+    display:block;
+    width: 150px;
+    padding: 10px;
+    list-style: none;
+}
+nav a span{
+    padding-left: 20px;
+
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0;
+}
+.fas
+{
+    position: relative;
+    width: 10px;/*space between char and icon*/
+    height: 20px;
+    top: 2px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.nav-item
+{
+    position: relative;
+    margin-left: 10px;
+}
+a:hover
+{
+    background: #fff;
+}
+nav:hover
+{
+    width:200px;
+    transition: all 0.5s ease;
+}
+.logout
+{
+    position:absolute;
+
+}
+nav:hover .logo img{
+    width: 90px;
+    height: 90px;
+    transition: all 0.5s ease;
+}
+.menu-toggle{
+
+    color: #fff;
+    float: left;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
